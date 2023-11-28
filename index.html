@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+		rel="stylesheet">
+	<style>
+		body {
+			min-height: 100vh;
+			margin: 0;
+			padding: 0 20px 20px;
+			font-family: "Open Sans", "Arial", sans-serif;
+			font-size: 16px;
+		}
+
+		.content {
+			width: 100%;
+			max-width: 640px;
+			margin: 50px auto;
+		}
+		.form__padding {
+			padding: 10px 0;
+		}
+
+		.inline-block {
+			display: inline-block;
+		}
+
+		.form-group__btn {
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="content">
+		<form class="form">
+			<fieldset>
+			<legend>Анкета нового пользователя</legend>
+
+				<div class="form-group__firstname form__padding">
+					<label for="id__firstname" class="label__firstname">Имя:</label>
+					<div class="input-firstname inline-block">
+						<input class="user-firstname" type="text" name="user-firstname" id="id__firstname">
+					</div>
+				</div>
+
+				<div class="form-group__secondname form__padding">
+					<label for="id__secondname" class="label__secondname">Фамилия:</label>
+					<div class="input-secondname inline-block">
+						<input class="user-secondname" type="text" name="user-secondname" id="id__secondname">
+					</div>
+				</div>
+
+				<div class="form-group__gender form__padding">
+					<label for="user-gender" class="label__gender">Укажите пол:</label>
+					<div class="input-gender inline-block">
+						<label for="id__gender-male" class="radio__gender">мужской</label>
+						<input class="user-gender" type="radio" name="user-gender" id="id__gender-male">
+						<label for="id__gender-female" class="radio__gender">женский</label>
+						<input class="user-gender" type="radio" name="user-gender" id="id__gender-female">
+					</div>
+				</div>
+
+
+
+				<div class="form-group__country form__padding">
+					<label for="user-country" class="label__country">Страна проживания:</label>
+					<div class="select-country inline-block">
+						<select class="country" name="country" id="id-country">
+							<option value="RB">Беларусь</option>
+							<option value="RF">Россия</option>
+							<option value="U">Украина</option>
+							<option value="P">Польша</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="form-group__language form__padding">
+					<label for="" class="label__language">Владение языками:</label>
+					<div class="checkbox-language inline-block">
+						<div class="check-item inline-block">
+							<input class="" id="check-rus" type="checkbox" checked>
+							<label class="check-label" for="check-rus">русский</label>
+						</div>
+						<div class="check-item inline-block">
+							<input class="" id="check-by" type="checkbox">
+							<label class="check-label" for="check-by">белорусский</label>
+						</div>
+						<div class="check-item inline-block">
+							<input class="" id="check-eng" type="checkbox">
+							<label class="check-label" for="check-eng">английский</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group__photo form__padding">
+					<label for="id__photo" class="label__photo">Фото профиля:</label>
+					<div class="input-photo inline-block">
+						<input class="user-photo" type="file" name="user-photo" id="id__photo">
+					</div>
+				</div>
+
+				<div class="form-group__login form__padding">
+					<label for="id__login" class="label__login">Введите логин:</label>
+					<div class="input-login inline-block">
+						<input class="user-login" type="text" name="user-login" id="id__login">
+					</div>
+				</div>
+
+				<div class="form-group__mail form__padding">
+					<label for="id__mail" class="label__mail">Введите email:</label>
+					<div class="input-mail inline-block">
+						<input class="user-mail" type="text" name="user-mail" id="id__mail">
+					</div>
+				</div>
+
+				<div class="form-group__password form__padding">
+					<label for="id__password" class="label__password">Введите пароль:</label>
+					<div class="input-password inline-block">
+						<input class="user-password" type="password" name="user-password" id="id__password">
+					</div>
+				</div>
+
+				<div class="form-group__password form__padding">
+					<label for="id__password" class="label__password">Повторите пароль:</label>
+					<div class="input-password inline-block">
+						<input class="user-password" type="password" name="user-password" id="id__password">
+					</div>
+				</div>
+
+				<hr>
+				<div class="form-group__btn form__padding">
+					<input class="btn-submit" type="submit" value="Отправить" disabled>
+					<input class="btn-reset" type="reset" value="Отменить">
+				</div>
+
+			</fieldset>
+		</form>
+	</div>
+</body>
+
+</html>
